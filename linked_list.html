@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Linked List Question</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      #Array_table {
+        border: 2px solid white;
+        border-collapse: collapse;
+      }
+      table tr {
+        border: 2px solid white;
+      }
+      table td {
+        padding-left: 8px;
+
+        border: 2px solid white;
+      }
+      table th {
+        border: 2px solid white;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 20px;
+      }
+      .center {
+        text-align: center;
+      }
+      table {
+        margin: 18px auto;
+      }
+      td a{
+        list-style: none;
+        color: white;
+      }
+      a:visited{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Placement Prep Tracker</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Content
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">DSA</a>
+              <a class="dropdown-item" href="#">Web Development</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Core Subjects</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+            Search
+          </button>
+          <div class="mx-2">
+            <button type="button" class="btn btn-danger" mx-2>LogIn</button>
+            <button type="button" class="btn btn-danger" mx-2>Signup</button>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Article</th>
+          <th>Practice</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Write a Program to reverse the Linked List. (Both Iterative and
+            recursive)
+          </td>
+          <td>
+            <a href="https://www.geeksforgeeks.org/reverse-a-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Reverse a Linked List in group of Given Size. [Very Imp]</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Write a program to Detect loop in a linked list.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Write a program to Delete loop in a linked list.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Find the starting point of the loop.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/find-first-node-of-loop-in-a-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Remove Duplicates in a sorted Linked List.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Remove Duplicates in a Un-sorted Linked List.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/remove-duplicates-from-an-unsorted-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Write a Program to Move the last element to Front in a Linked List.
+          </td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Add “1” to a number represented as a Linked List.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/add-1-number-represented-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Add two numbers represented by linked lists.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists-set-3/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Intersection of two Sorted Linked List.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/intersection-of-two-sorted-linked-lists/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Intersection Point of two Linked Lists.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Merge Sort For Linked lists.[Very Important]</td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/sort-a-linked-list/1"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/sort-a-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Quicksort for Linked Lists.[Very Important]</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/quick-sort-on-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Find the middle Element of a linked list.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Check if a linked list is a circular linked list.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/check-if-a-linked-list-is-circular-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/circular-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Split a Circular linked list into two halves.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Write a Program to check whether the Singly Linked list is a
+            palindrome or not.
+          </td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Deletion from a Circular Linked List.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/deletion-circular-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Reverse a Doubly Linked list.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Find pairs with a given sum in a DLL.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>
+            Count triplets in a sorted DLL whose sum is equal to given value
+            “X”.
+          </td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Sort a “k”sorted Doubly Linked list.[Very IMP]</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/sort-k-sorted-doubly-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Rotate Doubly Linked list by N nodes.</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/rotate-doubly-linked-list-n-nodes/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Rotate a Doubly Linked list in group of Given Size.[Very IMP]</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/reverse-doubly-linked-list-groups-given-size/"
+              >Link</a
+            >
+          </td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Can we reverse a linked list in less than O(n) ?</td>
+          <td>Link</td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>
+            Why Quicksort is preferred for. Arrays and Merge Sort for Linked
+            Lists ?
+          </td>
+          <td>Link</td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>Flatten a Linked List</td>
+          <td>
+            <a href="https://www.geeksforgeeks.org/flattening-a-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Sort a LL of 0’s, 1’s and 2’s</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Clone a linked list with next and random pointer</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Merge K sorted Linked list</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Multiply 2 no. represented by LL</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/multiply-two-linked-lists/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Delete nodes which have a greater value on right side</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Segregate even and odd nodes in a Linked List</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list/0"
+              >Link</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Program for n’th node from the end of a Linked List</td>
+          <td>
+            <a
+              href="https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/"
+              >Link</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1"
+              >Link</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
